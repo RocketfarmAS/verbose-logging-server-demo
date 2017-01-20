@@ -22,32 +22,32 @@ public class HomeController extends Controller {
         if(new Random().nextInt(100) < 2)
             return internalServerError();
 
-        return ok(index.render("index"));
+        return ok(index.render("Index"));
     }
 
     public Result app(){
         if(new Random().nextInt(100) < 2)
             return internalServerError();
 
-        return ok(index.render("app"));
+        return ok(index.render("App"));
     }
     public Result list(){
         if(new Random().nextInt(100) < 2)
             return internalServerError();
 
-        return ok(index.render("list"));
+        return ok(index.render("List"));
     }
     public Result test(){
         if(new Random().nextInt(100) < 2)
             return internalServerError();
 
-        return ok(index.render("test"));
+        return ok(index.render("Test"));
     }
     public Result log(){
         if(new Random().nextInt(100) < 2)
             return internalServerError();
 
-        return ok(index.render("log"));
+        return ok(index.render("Log"));
     }
 
 
