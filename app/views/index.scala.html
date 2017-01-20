@@ -10,11 +10,15 @@
  * argument is an `Html` object containing the body of the page.
  *@
 @main("Welcome to Play") {
+    <h1>@{message}</h1>
+    <h2>URLs</h2>
 
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
-    @play20.welcome(message, style = "Java")
+    <ul>
+        <li><a href='/'>index</a>  </li>
+        <li><a href='/app'>app</a>  </li>
+        <li><a href='/list'>list</a>  </li>
+        <li><a href='/test'>test</a>  </li>
+        <li><a href='/log'>log</a>  </li>
+    </ul>
 
 }
