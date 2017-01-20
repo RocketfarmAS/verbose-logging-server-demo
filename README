@@ -8,3 +8,19 @@ app will also return a random 500 and 401.
 To get the app to log, run the included jmeter script against the 
 Heroku instance.
 
+The application can be pushed as is to heroku.
+
+logz.io integrasjon
+============
+Lag bruker på logz.io. Når du har denne brukeren så går du til log shipping
+og henter ut logdrains kommandoen. (https://app.logz.io/#/dashboard/data-sources/Heroku)
+Denne bruker du i en heroku toolbelt installasjon.
+
+Når dette er gjort og trafikk genereres vil loggen fra heroku gå rett til logz.io.
+
+JMETER
+============
+For å lage trafikk last ned jmeter: http://jmeter.apache.org/download_jmeter.cgi
+Og åpne filen generate-traffic.jmx fra repoet.
+
+Denne er satt opp til å levere trafikk til heroku.
